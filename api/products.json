@@ -1,0 +1,307 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "ItemList",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Offer",
+        "@id": "6496525",
+        "sku": "3995486",
+        "mpn": "MN8X2ZD/A",
+        "name": "iPhone Apple iPhone 7 32GB Black smartphone - Zwart",
+        "description": "Apple iPhone 7 - Smartphone - 4G LTE Advanced - 32 GB - GSM - 4.7 - 1334 x 750 pixels (326 ppi) - Retina HD - 12 MP (7 MP voorcamera) - zwart",
+        "disambiguatingDescription": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "example": "Aansluiting usb"
+          }
+        },
+        "alternateName": "iPhone 7 32GB Black",
+        "availableAtOrFrom": {
+          "@type": "Place",
+          "name": "local"
+        },
+        "eligibleQuantity": 1,
+        "availability": 2103,
+        "gtin13": "190198067098",
+        "price": 615.89,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "CompoundPriceSpecification",
+          "name": "euPriceInclVat",
+          "price": 615.89,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true,
+          "priceComponent": [
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "euPrice",
+              "price": 509
+            }
+          ]
+        },
+        "category": {
+          "@type": "Thing",
+          "@id": "43191528",
+          "name": "smartphones"
+        },
+        "seller": {
+          "@type": "Organization",
+          "@id": "1",
+          "name": "TechData",
+          "identifier": "TD"
+        },
+        "url": "https://www.centralpoint.nl/smartphones/apple/iphone-7-32gb-black-art-mn8x2zd-a-num-6496525/",
+        "brand": {
+          "@type": "Brand",
+          "@id": "1048",
+          "name": "Apple"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Offer",
+        "@id": "5932603",
+        "sku": "5932603",
+        "mpn": "D3Q16B#A81",
+        "name": "HP PageWide Pro 452dw Printer - Zwart, Cyaan, Magenta, Geel",
+        "description": "HP PageWide Pro 452dw Printer - Zwart, Cyaan, Magenta, Geel kenmerken",
+        "disambiguatingDescription": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "example": "printer"
+          }
+        },
+        "alternateName": "HP PageWide Pro 452dw Printer",
+        "availableAtOrFrom": {
+          "@type": "Place",
+          "name": "local"
+        },
+        "eligibleQuantity": 1,
+        "availability": 2303,
+        "gtin13": "0889894174413",
+        "price": 487,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "CompoundPriceSpecification",
+          "name": "euPriceInclVat",
+          "price": 487,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true,
+          "priceComponent": [
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "euPrice",
+              "price": 487
+            }
+          ]
+        },
+        "category": {
+          "@type": "Thing",
+          "@id": "5932603",
+          "name": "printers"
+        },
+        "seller": {
+          "@type": "Organization",
+          "@id": "1",
+          "name": "TechData",
+          "identifier": "TD"
+        },
+        "url": "https://www.centralpoint.nl/print-scan/hp/pagewide-pro-452dw-art-d3q16ba81-num-5932603/",
+        "brand": {
+          "@type": "Brand",
+          "@id": "1052",
+          "name": "HP"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Offer",
+        "@id": "11109811",
+        "sku": "11109811",
+        "mpn": "JST-00003KCN-00005EYV-00010",
+        "name": "Microsoft Surface Go + KCN-00005 + EYV-00010 Tablet - Zilver",
+        "description": "Microsoft Surface Go + KCN-00005 + EYV-00010 Tablet - Zilver kenmerken",
+        "disambiguatingDescription": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "example": "tablet"
+          }
+        },
+        "alternateName": "Microsoft Surface Go",
+        "availableAtOrFrom": {
+          "@type": "Place",
+          "name": "local"
+        },
+        "eligibleQuantity": 1,
+        "availability": 203,
+        "gtin13": "JST-00003KCN-00005EYV-00010",
+        "price": 542,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "CompoundPriceSpecification",
+          "name": "euPriceInclVat",
+          "price": 542,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true,
+          "priceComponent": [
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "euPrice",
+              "price": 542
+            }
+          ]
+        },
+        "category": {
+          "@type": "Thing",
+          "@id": "11109811",
+          "name": "printers"
+        },
+        "seller": {
+          "@type": "Organization",
+          "@id": "1",
+          "name": "TechData",
+          "identifier": "TD"
+        },
+        "url": "https://www.centralpoint.nl/tablets/microsoft/surface-surface-go-plus-kcn-00005-plus-eyv-00010-art-jst-00003kcn-00005eyv-00010-num-11109811/",
+        "brand": {
+          "@type": "Brand",
+          "@id": "11109811",
+          "name": "Microsoft"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Offer",
+        "@id": "10590859",
+        "sku": "MVJFN",
+        "mpn": "5397184209370",
+        "name": "DELL Wyse 5040 All-in-one pc - Zwart All-in-one pc's",
+        "description": "DELL Wyse 5040 All-in-one pc - Zwart All-in-one pc's kenmerken",
+        "disambiguatingDescription": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "example": "all-in-one-pc"
+          }
+        },
+        "alternateName": "DELL Wyse 5040 All-in-one pc",
+        "availableAtOrFrom": {
+          "@type": "Place",
+          "name": "local"
+        },
+        "eligibleQuantity": 1,
+        "availability": 23,
+        "gtin13": "5397184209370",
+        "price": 557,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "CompoundPriceSpecification",
+          "name": "euPriceInclVat",
+          "price": 557,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true,
+          "priceComponent": [
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "euPrice",
+              "price": 557
+            }
+          ]
+        },
+        "category": {
+          "@type": "Thing",
+          "@id": "10590859",
+          "name": "all-in-one-pc"
+        },
+        "seller": {
+          "@type": "Organization",
+          "@id": "1",
+          "name": "TechData",
+          "identifier": "TD"
+        },
+        "url": "https://www.centralpoint.nl/all-in-one-pcs/dell/dell-wyse-5040-all-in-one-pc-zwart-art-mvjfn-num-10590859/",
+        "brand": {
+          "@type": "Brand",
+          "@id": "10590859",
+          "name": "DELL"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Offer",
+        "@id": "5152084",
+        "sku": "USB2AUB2RA2M",
+        "mpn": "0065030862424",
+        "name": "StarTech.com Micro-met rechts haakse connectors M/M 2m USB kabel - Zwart",
+        "description": "StarTech.com Micro-met rechts haakse connectors M/M 2m USB kabel - Zwart kenmerken",
+        "disambiguatingDescription": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "example": "cable"
+          }
+        },
+        "alternateName": "StarTech.com Micro-met rechts haakse",
+        "availableAtOrFrom": {
+          "@type": "Place",
+          "name": "local"
+        },
+        "eligibleQuantity": 1,
+        "availability": 3,
+        "gtin13": "5397184209370",
+        "price": 10,
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "CompoundPriceSpecification",
+          "name": "euPriceInclVat",
+          "price": 10,
+          "priceCurrency": "EUR",
+          "valueAddedTaxIncluded": true,
+          "priceComponent": [
+            {
+              "@type": "UnitPriceSpecification",
+              "name": "euPrice",
+              "price": 10
+            }
+          ]
+        },
+        "category": {
+          "@type": "Thing",
+          "@id": "5152084",
+          "name": "cable"
+        },
+        "seller": {
+          "@type": "Organization",
+          "@id": "1",
+          "name": "TechData",
+          "identifier": "TD"
+        },
+        "url": "https://www.centralpoint.nl/usb-kabels/startech-com/micro-usb-kabel-met-rechts-haakse-connectors-m-m-2m-art-usb2aub2ra2m-num-5152084/",
+        "brand": {
+          "@type": "Brand",
+          "@id": "5152084",
+          "name": "DELL"
+        }
+      }
+    }
+  ]
+}

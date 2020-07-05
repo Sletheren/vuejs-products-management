@@ -2,14 +2,26 @@
   "name": "centralpoint",
   "version": "0.1.0",
   "private": true,
+  "author": "Abdo Rakhma [contact@rakhma.me]",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "start": "concurrently \"yarn run:api\" \"yarn run:client\"",
+    "run:client": "vue-cli-service serve --port 3000",
+    "run:api": "json-server api/index.js --port 3030",
+    "build": "vue-cli-sservice build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
+    "axios": "^0.19.2",
+    "concurrently": "^5.2.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "json-server": "^0.16.1",
+    "lodash.get": "^4.4.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.0",
@@ -18,6 +30,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -25,18 +39,11 @@
     "env": {
       "node": true
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
+    "extends": ["plugin:vue/essential", "eslint:recommended"],
     "parserOptions": {
       "parser": "babel-eslint"
     },
     "rules": {}
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "browserslist": ["> 1%", "last 2 versions", "not dead"]
 }
