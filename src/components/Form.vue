@@ -4,7 +4,7 @@
       <slot name="title" />
     </h2>
     <div class="form-errors" v-if="hasErrors">
-      <font-awesome-icon icon="times" />
+      <i class="fa fa-times" />
       <span>Please fill all the required fileds</span>
     </div>
     <form action="#" @submit="formSubmit">
@@ -20,8 +20,8 @@
         />
       </div>
       <div class="buttons">
-        <button class="btn-primary" type="submit">{{submitText}}</button>
-        <button type="button" @click="cancel">{{cancelText}}</button>
+        <button id="form-submit-btn" class="btn-primary" type="submit">{{submitText}}</button>
+        <button id="form-cancel-btn" type="button" @click="cancel">{{cancelText}}</button>
       </div>
     </form>
   </div>

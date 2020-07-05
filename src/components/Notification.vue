@@ -1,7 +1,7 @@
 <template>
   <div class="notification" :class="type">
     <span class="icon">
-      <font-awesome-icon :icon="type==='error' ? 'times' : 'check'" />
+      <i class="fa" :class="{ 'fa-times': type==='error', 'fa-check': type==='success' }" />
     </span>
     <span class="message">{{ message }}</span>
   </div>

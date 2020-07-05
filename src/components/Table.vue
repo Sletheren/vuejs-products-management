@@ -5,7 +5,7 @@
         <tr>
           <th :key="column.key" v-for="column in columns" @click="sort(column.key)">
             {{column.title}}
-            <font-awesome-icon icon="sort" />
+            <i class="fa fa-sort" />
           </th>
           <th>Actions</th>
         </tr>
@@ -14,11 +14,17 @@
         <tr :key="row.id" v-for="row in rows">
           <td :key="column.key" v-for="column in columns">{{ row[column.key] }}</td>
           <td>
-            <button @click="onActionClick('edit', row.id)" class="reset-btn action-button">
-              <font-awesome-icon icon="edit" />
+            <button
+              @click="onActionClick('edit', row.id)"
+              class="reset-btn action-button action-edit"
+            >
+              <i class="fa fa-edit" />
             </button>
-            <button @click="onActionClick('delete', row.id)" class="reset-btn action-button">
-              <font-awesome-icon icon="trash" />
+            <button
+              @click="onActionClick('delete', row.id)"
+              class="reset-btn action-button action-delete"
+            >
+              <i class="fa fa-trash" />
             </button>
           </td>
         </tr>

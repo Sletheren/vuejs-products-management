@@ -17,6 +17,7 @@ export default {
 
 <style lang="scss">
 @import "./styles/theme.scss";
+
 header {
   background-color: $color-yellow-dark;
   padding: 30px;

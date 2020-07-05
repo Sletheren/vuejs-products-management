@@ -2,7 +2,7 @@
   <div class="modal">
     <div class="modal-content">
       <button class="close-btn reset-btn" @click="closeModalPage">
-        <font-awesome-icon icon="times" />
+        <i class="fa fa-times" />
       </button>
       <div class="modal-body">
         <slot></slot>

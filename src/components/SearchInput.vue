@@ -1,7 +1,7 @@
 <template>
   <div class="search-wrapper">
     <label for="search">
-      <font-awesome-icon icon="search" />
+      <i class="fa fa-search" />
     </label>
     <input
       id="search"
@@ -11,7 +11,7 @@
       @input="onChange"
     />
     <button id="clear-search" class="reset-btn" @click="clearSearch">
-      <font-awesome-icon icon="times-circle" />
+      <i class="fa fa-times-circle" />
     </button>
   </div>
 </template>

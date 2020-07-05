@@ -5,7 +5,7 @@
       <h1>Our products</h1>
       <router-link to="/create" class="reset-btn create-button">
         <span>Add product</span>
-        <font-awesome-icon icon="plus-circle" />
+        <i class="fa fa-plus-circle" />
       </router-link>
     </div>
     <Table :columns="columns" :rows="rows" @tableSort="onTableSort" @actionClick="onActionClick" />
