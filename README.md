@@ -51,5 +51,5 @@ yarn test
 ### Lints and fixes files
 
 ```
-yarn run lint
+yarn lint
 ```

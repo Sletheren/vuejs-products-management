@@ -19,6 +19,15 @@
         :message="notificationSettings.message"
       />
     </transition>
+    <transition name="fade">
+      <DeleteAlert
+        v-if="showDeleteAlert"
+        title="Are you sure?"
+        description="Do you really want to delete this product?"
+        @confirm="ConfirmDelete"
+        @cancel="CancelDelete"
+      />
+    </transition>
   </div>
 </template>
 
@@ -28,13 +37,14 @@ import { mapState, mapActions } from "vuex";
 import Table from "../components/Table";
 import ModalPage from "../components/Modal";
 import SearchInput from "../components/SearchInput";
+import DeleteAlert from "../components/Alert";
 import Notification from "../components/Notification";
 
 import config from "../config";
 
 export default {
   name: "home-screen",
-  components: { Table, SearchInput, ModalPage, Notification },
+  components: { Table, SearchInput, ModalPage, Notification, DeleteAlert },
 
   data: function() {
     return {
@@ -42,7 +52,9 @@ export default {
       sortTarget: config.data.columns[0].key,
       columns: config.data.columns,
       textSearch: "",
-      showModal: false
+      showModal: false,
+      showDeleteAlert: false,
+      toBeDeletedId: null
     };
   },
   async mounted() {
@@ -83,12 +95,22 @@ export default {
         this.sortTarget = target;
       }
     },
-    onActionClick: async function(payload) {
+    onActionClick: function(payload) {
       if (payload.type === "delete") {
-        await this.deleteProduct(payload.id);
+        this.toBeDeletedId = payload.id;
+        this.showDeleteAlert = true;
       } else if (payload.type === "edit") {
         this.$router.push(`/edit/${payload.id}`);
       }
+    },
+    ConfirmDelete: async function() {
+      await this.deleteProduct(this.toBeDeletedId);
+      this.toBeDeletedId = null;
+      this.showDeleteAlert = false;
+    },
+    CancelDelete: function() {
+      this.toBeDeletedId = null;
+      this.showDeleteAlert = false;
     }
   },
   watch: {
