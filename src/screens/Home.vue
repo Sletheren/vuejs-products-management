@@ -24,8 +24,8 @@
         v-if="showDeleteAlert"
         title="Are you sure?"
         description="Do you really want to delete this product?"
-        @confirm="ConfirmDelete"
-        @cancel="CancelDelete"
+        @confirm="confirmDelete"
+        @cancel="cancelDelete"
       />
     </transition>
   </div>
@@ -103,12 +103,12 @@ export default {
         this.$router.push(`/edit/${payload.id}`);
       }
     },
-    ConfirmDelete: async function() {
+    confirmDelete: async function() {
       await this.deleteProduct(this.toBeDeletedId);
       this.toBeDeletedId = null;
       this.showDeleteAlert = false;
     },
-    CancelDelete: function() {
+    cancelDelete: function() {
       this.toBeDeletedId = null;
       this.showDeleteAlert = false;
     }

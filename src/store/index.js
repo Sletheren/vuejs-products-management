@@ -6,11 +6,13 @@ import notification from './modules/notification'
 
 Vue.use(Vuex)
 
+export const modules = {
+  products,
+  notification
+}
+
 const store = new Vuex.Store({
-  modules: {
-    products,
-    notification
-  }
+  modules
 })
 
 export default store
